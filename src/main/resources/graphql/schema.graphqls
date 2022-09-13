@@ -1,0 +1,19 @@
+enum AreaEnum {
+    A1, A2, A3, A4
+}
+
+enum DirectionEnum {
+    N, S, W, E
+}
+
+type PortCall {
+    code: String
+    name: String
+    country: String
+    area: AreaEnum
+    direction: DirectionEnum
+}
+
+type Query {
+    allPortCalls: [PortCall]
+}
